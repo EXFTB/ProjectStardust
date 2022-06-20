@@ -1,0 +1,4 @@
+game:GetService("Workspace").UserNameHere["Praetor Mark II"].Stats.Speed = 1100
+game:GetService("Workspace").UserNameHere["Praetor Mark II"].Stats.Speed.Value = 1100
+
+--either one of them, if it doesnt work just press your local player, make sure you launch first then go to your stats in the ship and change speed value to 1100 or whatever.
