@@ -1,22 +1,4 @@
---//ShipSpeed changer!!!, Use one of the scripts below//--
 
-game:GetService("Workspace").LocalPlayer["Ship Here"].Stats.Speed = 1100
-game:GetService("Workspace").LocalPlayer["Ship Here"].Stats.Speed.Value = 1100
-
---I havent really looked into it but these [] might only be for Ships with spaces in their names.
-
---either one of them, if it doesnt work just press your local player, make sure you launch first then go to your stats in the ship and change speed value to 1100 or whatever.
-
-game:GetService("Workspace").LocalPlayer.Ship Here.Stats.Speed = 1100
-game:GetService("Workspace").LocalPlayer.Ship Here.Stats.Speed.Value = 1100
-
-
---//UPDATE!!!//--
---most likely
-game:GetService("Workspace").LocalPlayer.Ship Here.Stats.Speed.Value = 1100 --if the ship has no spaces in its name for an example //LocalPlayer.Veantor.Stats//
-game:GetService("Workspace").LocalPlayer["Ship Here"].Stats.Speed.Value = 1100 --if the ship has a space in its name for an example //LocalPlayer[Praetor Mark II].Stats//
-
---IF IT STILL DOESNT WORK, you have either put the wrong shipname, ur not spawned in the match or you have to type your USERNAME instead of LocalPlayer for an example,
---game:GetService("Workspace").YOURUSERNAMEHERE.Venator.Stats.Speed.Value = 1100
-
---without the ''--'' in the beiginning.
+local Players = game:GetService("Players")
+local Client = Players.LocalPlayer
+Client["SHIPNAME"].Stat.Speed.Value = 1000
